@@ -14,7 +14,7 @@ const convertirMoneda = async () => {
     alert('Completa todos los campos');
     return;
   }
-  if (Numero(cantidad) <= 0) {
+  if (Number(cantidad) <= 0) {
     alert('Cantidad debe ser un número positivo');
     return;
   }
@@ -26,7 +26,7 @@ const convertirMoneda = async () => {
       body: JSON.stringify({
         origen: origen.toUpperCase(),
         destino: destino.toUpperCase(),
-        cantidad: Numero(cantidad),
+        cantidad: Number(cantidad),
       }),
     });
 
