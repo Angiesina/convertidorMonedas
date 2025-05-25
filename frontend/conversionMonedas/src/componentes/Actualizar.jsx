@@ -41,50 +41,21 @@ const Actualizar = () => {
 
         <div className="insertar-group">
           <label htmlFor="id">ID:</label>
-          <input
-            id="id"
-            name="id"
-            type="text"
-            placeholder="ID de la moneda"
-            value={id}
-            onChange={(e) => setId(e.target.value)}
-          />
+          <input id="id" name="id" type="text" placeholder="ID de la moneda" value={id} onChange={(e) => setId(e.target.value)}/>
         </div>
 
         <div className="insertar-group">
           <label htmlFor="origen">Origen:</label>
-          <input
-            id="origen"
-            name="origen"
-            type="text"
-            placeholder="Ejemplo: USD"
-            value={origen}
-            onChange={(e) => setOrigen(e.target.value)}
-          />
+          <input id="origen" name="origen" type="text" placeholder="Ejemplo: MXN" value={origen} onChange={(e) => setOrigen(e.target.value)}/>
         </div>
-
-        <div className="insertar-group">
+        <div className="insertar-group"> 
           <label htmlFor="destino">Destino:</label>
-          <input
-            id="destino"
-            name="destino"
-            type="text"
-            placeholder="Ejemplo: EUR"
-            value={destino}
-            onChange={(e) => setDestino(e.target.value)}
-          />
+          <input id="destino" name="destino" type="text" placeholder="Ejemplo: USD" value={destino} onChange={(e) => setDestino(e.target.value)}/>
         </div>
 
         <div className="insertar-group">
           <label htmlFor="valor">Valor:</label>
-          <input
-            id="valor"
-            name="valor"
-            type="number"
-            placeholder="Ejemplo: 1.12"
-            value={valor}
-            onChange={(e) => setValor(e.target.value)}
-          />
+          <input id="valor" name="valor" type="number" placeholder="Ejemplo: 1.12" value={valor} onChange={(e) => setValor(e.target.value)}/>
         </div>
 
         <button className="insertar-button" onClick={actualizarMoneda}>Actualizar</button>

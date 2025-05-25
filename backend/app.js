@@ -8,7 +8,7 @@ const cors = require('cors');
 const puerto = 3000
 
 app.use(bodyParser.json())
-app.use(cors()); // Permite peticiones desde cualquier origen
+app.use(cors()); // permite peticiones desde cualquier origen
 
 app.listen(puerto, () => {
     console.log('servidor iniciado...')

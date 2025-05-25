@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import fondo from '../assets/fondo.jpg';
-import './Consultar.css'; // donde tienes los estilos
+import './Consultar.css'; 
 
 const Consultar = () => {
   const [monedas, setMonedas] = useState([]);

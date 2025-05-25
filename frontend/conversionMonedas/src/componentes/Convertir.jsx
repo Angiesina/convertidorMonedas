@@ -14,7 +14,7 @@ const convertirMoneda = async () => {
     alert('Completa todos los campos');
     return;
   }
-  if (isNaN(cantidad) || Number(cantidad) <= 0) {
+  if (Numero(cantidad) <= 0) {
     alert('Cantidad debe ser un número positivo');
     return;
   }
@@ -26,7 +26,7 @@ const convertirMoneda = async () => {
       body: JSON.stringify({
         origen: origen.toUpperCase(),
         destino: destino.toUpperCase(),
-        cantidad: Number(cantidad),
+        cantidad: Numero(cantidad),
       }),
     });
 
@@ -34,7 +34,7 @@ const convertirMoneda = async () => {
 
     const data = await res.json();
 
-    setResultado(data.resultado.toFixed(2));
+    setResultado(data.resultado);
     setError('');
   } catch (error) {
     alert('Error al convertir moneda');
@@ -51,48 +51,22 @@ const convertirMoneda = async () => {
 
         <div className="insertar-group">
           <label htmlFor="origen">Origen:</label>
-          <input
-            id="origen"
-            name="origen"
-            type="text"
-            placeholder="Ejemplo: USD"
-            value={origen}
-            onChange={(e) => setOrigen(e.target.value)}
-          />
+          <input id="origen" name="origen" type="text" placeholder="Ejemplo: USD" value={origen} onChange={(e) => setOrigen(e.target.value)}/>
         </div>
-
         <div className="insertar-group">
           <label htmlFor="destino">Destino:</label>
-          <input
-            id="destino"
-            name="destino"
-            type="text"
-            placeholder="Ejemplo: EUR"
-            value={destino}
-            onChange={(e) => setDestino(e.target.value)}
-          />
+          <input id="destino" name="destino" type="text" placeholder="Ejemplo: MXN" value={destino} onChange={(e) => setDestino(e.target.value)}/>
         </div>
 
         <div className="insertar-group">
           <label htmlFor="cantidad">Cantidad:</label>
-          <input
-            id="cantidad"
-            name="cantidad"
-            type="number"
-            placeholder="Ejemplo: 100"
-            value={cantidad}
-            onChange={(e) => setCantidad(e.target.value)}
-          />
+          <input id="cantidad" name="cantidad" type="number" placeholder="Ejemplo: 100" value={cantidad} onChange={(e) => setCantidad(e.target.value)}/>
         </div>
 
-        <button className="insertar-button" onClick={convertirMoneda}>
-          Convertir
-        </button>
+        <button className="insertar-button" onClick={convertirMoneda}> Convertir</button>
 
         {resultado !== null && (
-          <p className="insertar-resultado">
-            La cantidad de {cantidad} {origen.toUpperCase()} equivale a {resultado} {destino.toUpperCase()}
-          </p>
+          <p className="insertar-resultado"> La cantidad de {cantidad} {origen.toUpperCase()} equivale a {resultado} {destino.toUpperCase()}</p>
         )}
 
         {error && <p className="insertar-error">{error}</p>}

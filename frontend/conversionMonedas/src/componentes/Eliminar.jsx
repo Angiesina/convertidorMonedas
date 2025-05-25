@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Insertar.css';
-import fondo from '../assets/fondo.jpg';  // asumo que tienes la imagen fondo en assets
+import fondo from '../assets/fondo.jpg';  
 
 const Eliminar = () => {
   const [id, setId] = useState('');
@@ -33,19 +33,10 @@ const Eliminar = () => {
     <div className="insertar-fondo" style={{ backgroundImage: `url(${fondo})` }}>
       <div className="insertar-container">
         <h3>Eliminar Moneda</h3>
-
         <div className="insertar-group">
           <label htmlFor="id">ID:</label>
-          <input
-            id="id"
-            name="id"
-            type="text"
-            placeholder="ID de la moneda a eliminar"
-            value={id}
-            onChange={(e) => setId(e.target.value)}
-          />
+          <input id="id" name="id" type="text" placeholder="ID de la moneda a eliminar" value={id} onChange={(e) => setId(e.target.value)} />
         </div>
-
         <button className="insertar-button" onClick={eliminarMoneda}>Eliminar</button>
       </div>
     </div>

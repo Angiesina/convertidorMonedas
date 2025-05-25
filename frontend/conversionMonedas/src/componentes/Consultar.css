@@ -1,4 +1,4 @@
-/* Contenedor general para Consultar */
+/* contenedor general para Consultar */
 .consultar-fondo {
   background-image: url('../assets/fondo.jpg');
   background-size: cover;
@@ -11,7 +11,6 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Caja blanca semi-transparente igual que en Insertar */
 .consultar-container {
   background: rgba(255, 255, 255, 0.85);
   padding: 30px 40px;
@@ -21,14 +20,14 @@
   width: 100%;
 }
 
-/* Título */
+/* título */
 .consultar-container h3 {
   text-align: center;
   margin-bottom: 25px;
   color: #333;
 }
 
-/* Tabla para mostrar monedas */
+/* tabla para mostrar monedas */
 .consultar-table {
   width: 100%;
   border-collapse: collapse;
