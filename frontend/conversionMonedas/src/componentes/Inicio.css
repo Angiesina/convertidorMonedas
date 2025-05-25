@@ -1,0 +1,81 @@
+/* Fondo principal */
+.inicio-fondo {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor central con sombras */
+.inicio-contenido {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 40px;
+  font-family: Poppins, sans-serif;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Títulos */
+.inicio-contenido h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  color: #e0f2ff;
+}
+
+.inicio-contenido h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.inicio-contenido p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #cbd5e0;
+  margin-bottom: 40px;
+}
+
+/* Galería en tarjeta blanca */
+.galeria-blanca {
+  background-color: #fff;
+  color: #1a202c;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.galeria-blanca h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Galería de imágenes */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galeria img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}

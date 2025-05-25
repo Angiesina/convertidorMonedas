@@ -1,0 +1,54 @@
+/* Contenedor general para Consultar */
+.consultar-fondo {
+  background-image: url('../assets/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding-top: 200px; /* para que no tape el header */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Caja blanca semi-transparente igual que en Insertar */
+.consultar-container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
+  width: 100%;
+}
+
+/* Título */
+.consultar-container h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Tabla para mostrar monedas */
+.consultar-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  color: #444;
+}
+
+.consultar-table th, .consultar-table td {
+  border: 1.5px solid #ddd;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.consultar-table th {
+  background-color: #1c3754;
+  color: white;
+  font-weight: 700;
+}
+
+.consultar-table tbody tr:hover {
+  background-color: #f1f7ff;
+  cursor: pointer;
+}
