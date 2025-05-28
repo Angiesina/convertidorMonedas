@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  padding-top: 200px; /* para que no tape el header */
+  padding-top: 200px; 
   display: flex;
   justify-content: center;
   align-items: flex-start;
